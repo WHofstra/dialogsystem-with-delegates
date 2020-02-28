@@ -43,14 +43,16 @@ public class DialogSystem : MonoBehaviour
             return;
         }
 
-        var dialog = _dialogs[0];
+        var currentDialog = _dialogs[0];
         _dialogs.RemoveAt(0);
 
         if (DialogChanged != null)
         {
-            DialogChanged(dialog);
+            DialogChanged(currentDialog);
         }
-
+        
+        // met invoke kunnen we een functie aanroepen met een delay
+        // de delay is nu 'hard' 3 seconden
         Invoke("NextDialog", 3);
     }
 }

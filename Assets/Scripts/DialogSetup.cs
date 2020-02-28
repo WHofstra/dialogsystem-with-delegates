@@ -16,7 +16,7 @@ public class DialogSetup : MonoBehaviour
         dialogSystem.AddDialog("Sta er goed bij stil welke classes elkaar nu kennen");
         dialogSystem.AddDialog("En nog belangrijker: wie kent alleen zichzelf? :)");
         dialogSystem.AddDialog("Succes met het verwerken van delegates in je eigen opdracht");
-        dialogSystem.AddDialog("En hopelijk zien we het ook terug in je Vertical Slice");
+        dialogSystem.AddDialog("En hopelijk zien we het ook terug in je Input/output");
         
         dialogSystem.Play();
     }
